@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ae2d90 0%, #ec8fcd 100%);
   min-height: 100vh;
   color: white;
 }
@@ -73,7 +73,7 @@ main {
 
 button {
   background: white;
-  color: #667eea;
+  color: #ae0f6c;
   border: none;
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -94,7 +94,7 @@ button:active {
 }
 
 #reset-button {
-  background: #ff6b6b;
+  background: #a1415c;
   color: white;
 }
 

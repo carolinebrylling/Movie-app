@@ -66,13 +66,13 @@ main {
 #counter {
   font-size: 4rem;
   font-weight: bold;
-  color: #ffd700;
+  color: #872039;
   display: block;
   margin: 1rem 0;
 }
 
 button {
-  background: white;
+  background: rgb(67, 12, 12);
   color: #ae0f6c;
   border: none;
   padding: 1rem 2rem;
@@ -94,7 +94,7 @@ button:active {
 }
 
 #reset-button {
-  background: #a1415c;
+  background: #b95e91;
   color: white;
 }
 

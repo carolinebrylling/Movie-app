@@ -7,6 +7,7 @@ const movies = [
     title: "Inception",
     year: 2010,
     rating: 8.8,
+    Image: "https://en.wikipedia.org/wiki/Inception_%28soundtrack%29",
   },
   {
     title: "The Matrix",

@@ -1,62 +1,60 @@
 "use strict";
 
-console.log("App kører!");
+console.log("Movie App starter...");
 
-// Elementer
-const counterEl = document.querySelector("#counter");
-const clickBtn = document.querySelector("#click-button");
-const resetBtn = document.querySelector("#reset-button");
-const minusBtn = document.querySelector("#minus-button"); // ny knap
+const movies = [
+  {
+    title: "Inception",
+    year: 2010,
+    rating: 8.8,
+  },
+  {
+    title: "The Matrix",
+    year: 1999,
+    rating: 8.7,
+  },
+  {
+    title: "Interstellar",
+    year: 2014,
+    rating: 8.6,
+  },
+  {
+    title: "The Dark Knight",
+    year: 2008,
+    rating: 9.0,
+  },
+];
 
-let count = 0;
+const movieList = document.querySelector("#movie-list");
 
-// Indstillinger
-const limit = 10; // grænseværdi
-const goal = 10;  // mål
+showMovies();
 
-// Funktion til at opdatere display + farve
-function updateDisplay() {
-  counterEl.textContent = count;
+function showMovies() {
+  movieList.innerHTML = "";
 
-  // 6.1 - farveskift
-  if (count >= limit) {
-    counterEl.style.color = "red";
-  } else {
-    counterEl.style.color = "black";
+  for (const movie of movies) {
+    showMovie(movie);
   }
 }
 
-// ➕ Klik op
-clickBtn.addEventListener("click", function () {
-  count++;
-  updateDisplay();
+function showMovie(movie) {
+  const html = /* html */ `
+    <article class="movie-card">
+      <div class="movie-info">
+        <h3>${movie.title}</h3>
+        <p>År: ${movie.year}</p>
+        <p>Rating: ${movie.rating}</p>
+      </div>
+    </article>
+  `;
 
-  console.log("Count:", count);
+  movieList.insertAdjacentHTML("beforeend", html);
+}
 
-  // 6.3 - besked ved mål
-  if (count === goal) {
-    console.log("Du ramte 10! 🎉");
-    alert("Du ramte 10! 🎉");
-  }
+movies.push({
+  title: "Pulp Fiction",
+  year: 1994,
+  rating: 8.9,
 });
 
-// ➖ Klik ned (6.2)
-minusBtn.addEventListener("click", function () {
-  // hvis du IKKE vil under 0:
-  if (count > 0) {
-    count--;
-  }
-
-  updateDisplay();
-  console.log("Count:", count);
-});
-
-// 🔄 Reset
-resetBtn.addEventListener("click", function () {
-  count = 0;
-  updateDisplay();
-
-  console.log("Reset!");
-});
-
-
+showMovies();

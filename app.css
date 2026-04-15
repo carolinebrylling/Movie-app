@@ -1,10 +1,28 @@
 
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+
 }
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
 
 .movie-grid {
   display: grid;
@@ -32,7 +50,7 @@ main {
 }
 
 .movie-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(114, 107, 167, 0.951);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 1rem;
@@ -63,4 +81,7 @@ main {
   display: block;
 }
 
+.movie-card--highlight {
+  border: 2px solid gold;
+}
 

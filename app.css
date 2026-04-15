@@ -1,4 +1,9 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 
+}
 
 main {
   max-width: 1200px;
@@ -9,7 +14,7 @@ main {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #513c85 0%, #471b72 100%);
   min-height: 100vh;
   color: white;
 }
@@ -50,7 +55,7 @@ header h1 {
 }
 
 .movie-card {
-  background: rgba(114, 107, 167, 0.951);
+  background: rgba(82, 47, 117, 0.951);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 1rem;
